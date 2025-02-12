@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Club</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/logo.png" alt="The Book Club logo" style="top: 11px; position: relative;">
+            <heading>The<br>Book Club</heading>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#shop">Shop</a>
+                <a href="#categories">Categories</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="#"><img src="./assets/notifications_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                <a href="#"><img src="./assets/shopping_bag_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                <a href="#"><img src="./assets/account_circle_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Home">
+            <div class="home-animate">
+                <div id="home-animate-heading1">The Book Lover's Dreamland Awaits!</div>
+                <div id="home-animate-heading2">
+                    Welcome to the ultimate book lover's paradise! Join our community 
+                    and contribute to the ever<br>-evolving library of stories, 
+                    where every book has a chance to inspire someone new.
+                </div>
+                <div id="home-animate-search">
+                    <input type="text" placeholder="Search for your next read...">
+                    <button>Search</button>
+                </div>
+            </div>
+            <br><br>
+            <h1 class="custom-heading1">Our Best Picks</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./assets/book1.jpg">
+                    <img src="./assets/book2.jpg">
+                    <img src="./assets/book3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./assets/book4.jpg">
+                    <img src="./assets/book5.jpg">
+                    <img src="./assets/book6.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./assets/book7.jpg">
+                    <img src="./assets/book8.jpg">
+                    <img src="./assets/Crime.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="home-content">
+                <div class="home-content-img">
+                    <img src="./assets/home-content-photo.png" alt="home-content-img">
+                </div>
+                <div class="home-content-text">
+                    <heading1>Your favourite<t> Reads <br>Are Here!</t></heading1>
+                    <p>Buy your favorite books online with 
+                        ease! Enjoy exclusive offers and
+                        discounts on selected titles. Dive into
+                        our collection and find special deals 
+                        that make reading more affordable. 
+                        Shop now and unlock more savings with 
+                        every purchase!
+                    </p>
+                    <div class="home-content-heading">
+                        <span class="home-content-heading2">
+                            800+<br><x>Book Listing<x>
+                        </span>
+                        <span class="home-content-heading2">
+                            1K+<br><x>Registered Members<x>
+                        </span>
+                        <span class="home-content-heading2">
+                            50+<br><x>Branch Count<x>
+                        </span>
+                    </div>
+                    <div class="home-content-button">
+                        <button>Explore More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shop">
+            <div class="shop-content">
+                <div>Explore All Books Here</div>
+                <div class="filter-options">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span>All</span>
+                    </label>
+                
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span>Novel</span>
+                    </label>
+                
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span>Translations</span>
+                    </label>
+                
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span>Kids' Stories</span>
+                    </label>
+                </div>                                
+            </div>
+            <div class="shop-book-grid">
+                <div class="shop-book-card">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=300&h=400" alt="Thummanbandiya">
+                    <h3>Milk And Honey</h3>
+                    <p class="author">Rupi Kaur</p>
+                    <p class="price">Rs. 350/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book5.jpg" alt="Ikigai">
+                    <div class="tag">Best Seller</div> 
+                    <h3>Ikigai</h3>
+                    <p class="author">Hector Garcia</p>
+                    <p class="price">Rs. 250/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book7.jpg" alt="The Secret">
+                    <h3>The Secret</h3>
+                    <p class="author">Rhonda Byrne</p>
+                    <p class="price">Rs. 150/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book4.jpg" alt="Psychology of Money">
+                    <div class="tag">Best Seller</div> 
+                    <h3>The Psychology of Money</h3>
+                    <p class="author">Morgan Housel</p>
+                    <p class="price">Rs. 250/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book2.jpg" alt="The Great Train Journey">
+                    <h3>The Great Train Journey</h3>
+                    <p class="author">Ruskin Bond</p>
+                    <p class="price">Rs. 150/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/Book3 (1).jpg" alt="Thummanbandiya">
+                    <div class="tag">Best Seller</div> 
+                    <h3>Atomic Habits</h3>
+                    <p class="author">James Clear</p>
+                    <p class="price">Rs. 150/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book1.jpg" alt="Thummanbandiya">
+                    <h3>Neither Here Nor There</h3>
+                    <p class="author">Bill Bryson</p>
+                    <p class="price">Rs. 350/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book8.jpg" alt="Thummanbandiya">
+                    <div class="tag">Best Seller</div> 
+                    <h3>Wings of Fire</h3>
+                    <p class="author">APJ Abdul Kalam</p>
+                    <p class="price">Rs. 250/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book6.jpg" alt="Thummanbandiya">
+                    <h3>Why I am an Atheist</h3>
+                    <p class="author">Bhagat Singh</p>
+                    <p class="price">Rs. 250/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book5.jpg" alt="Ikigai">
+                    <div class="tag">Best Seller</div>
+                    <h3>Ikigai</h3>
+                    <p class="author">Hector Garcia</p>
+                    <p class="price">Rs. 250/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book7.jpg" alt="The Secret">
+                    <h3>The Secret</h3>
+                    <p class="author">Rhonda Byrne</p>
+                    <p class="price">Rs. 150/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="shop-book-card">
+                    <img src="./assets/book4.jpg" alt="Psychology of Money">
+                    <div class="tag">Best Seller</div> 
+                    <h3>The Psychology of Money</h3>
+                    <p class="author">Morgan Housel</p>
+                    <p class="price">Rs. 250/-</p>
+                    <p class="availability">Available across all branches</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-class">
+                <div class="image-container"><img src="./assets/about-content-photo.png"></div>
+                <div class="container">
+                    <h1>About Us</h1><br>
+                    <p>Welcome to The Book Club, your trusted source for a diverse range of books catering to every reader's taste. Established with the mission to foster a love for reading in our community, we pride ourselves on providing excellent service and a wide selection of books.</p>
+                    <br><br>
+                    <h2>Our Branches</h2>
+                    <div class="branches">
+                        <div class="branch">
+                            <h3>Kurunegala</h3>
+                            <p>Main Street, City Center<br>Contact: 123-456-7890</p>
+                            <p>Operating Hours: Monday to Saturday, 9 AM - 7 PM; Sunday, 10 AM - 5 PM</p>
+                            <p>In-store shopping, special discounts for students, workshops, study spaces</p>
+                        </div>
+                        <div class="branch">
+                            <h3>Kandy</h3>
+                            <p>Main Street, City Center<br>Contact: 123-456-7890</p>
+                            <p>Operating Hours: Monday to Saturday, 9 AM - 7 PM; Sunday, 10 AM - 5 PM</p>
+                            <p>In-store shopping, special discounts for students, workshops, study spaces</p>
+                        </div>
+                        <div class="branch">
+                            <h3>Colombo</h3>
+                            <p>Main Street, City Center<br>Contact: 123-456-7890</p>
+                            <p>Operating Hours: Monday to Saturday, 9 AM - 7 PM; Sunday, 10 AM - 5 PM</p>
+                            <p>In-store shopping, special discounts for students, workshops, study spaces</p>
+                        </div>
+                    </div>
+                    <div class="commitment">
+                        <h2>Our Commitment</h2><br>
+                        <p>At The Book Club, we are committed to providing a welcoming and inspiring environment for all book enthusiasts. Our branches are staffed with knowledgeable and friendly team members ready to assist you in finding the perfect book. Join us at one of our branches or explore our offerings online.</p>
+                    </div>
+                </div>        
+        </section>
+        <section id="categories">
+            <div class="categories">
+                <h1 class="custom-heading1">Categories</h1>
+                <div class="scroller" data-direction="left" data-speed="slow">
+                    <div class="scroller__inner">
+                      <img src="./assets/christmas.jpg" alt="" />
+                      <img src="./assets/Crime.jpg" alt="" />
+                      <img src="./assets/Manga.png" alt="" />
+                      <img src="./assets/Fantasy.jpg" alt="" />
+                      <img src="./assets/classic.jpg" alt="" />
+                      <img src="./assets/Book3 (1).jpg" alt="" />
+                    </div>
+                </div>
+                <br>
+                <div class="scroller" data-direction="right" data-speed="slow">
+                    <div class="scroller__inner">
+                      <img src="./assets/book4.jpg" alt="" />
+                      <img src="./assets/book5.jpg" alt="" />
+                      <img src="./assets//book8.jpg" alt="" />
+                      <img src="./assets/Fantasy.jpg" alt="" />
+                      <img src="./assets/classic.jpg" alt="" />
+                      <img src="./assets/Book3 (1).jpg" alt="" />
+                    </div>
+                </div>  
+                <div class="category-container">
+                    <div class="category">
+                        <img src="./assets/christmas.jpg" alt="Christmas Books">
+                        <div class="category-title">Christmas Books Collection</div>
+                    </div>
+                    <div class="category">
+                        <img src="./assets/Crime.jpg" alt="Crime and Thriller">
+                        <div class="category-title">Crime and Thriller Books</div>
+                    </div>
+                    <div class="category">
+                        <img src="./assets/Manga.png" alt="Mangas">
+                        <div class="category-title">Mangas</div>
+                    </div>
+                    <div class="category">
+                        <img src="./assets/Fantasy.jpg" alt="Fantasy Books">
+                        <div class="category-title">Fantasy Books</div>
+                    </div>
+                    <div class="category">
+                        <img src="./assets/classic.jpg" alt="Classic and Literature">
+                        <div class="category-title">Classic and Literature Books</div>
+                    </div>
+                </div>
+        </section>
+        <section id="contact-us">
+            <h1 class="custom-heading1">Contact Us</h1>
+            <div class="contact-us">
+                    <div class="contact-us-container">
+                        <div class="iframe-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2233.2400397660795!2d75.7023243746705!3d31.25467976472503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slpu!5e1!3m2!1sen!2sin!4v1739080210175!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contact-us-details">
+                            <h2>Get in Touch</h2>
+                            <form action="submit">
+                                <input type="text" placeholder="Enter Your Name" required>
+                                <input type="email" placeholder="Enter Your Email" required>
+                                <textarea placeholder="Message" required></textarea>
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="The Book Club logo">
+                <heading>The<br>Book Club</heading>
+            </div>
+            <ul class="footer-links">
+                <th><heading>Quick Links</heading></th>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="blogs-links">
+                <th><heading>Blogs</heading></th>
+                <div class="content">
+                    <li>
+                        <div class="blog-img"><img src="./assets/blog-footer-image-1.jpg"></div>
+                        <a href="#">The Best Books of 2021</a>
+                    </li>
+                    <li>
+                        <div class="blog-img"><img src="./assets/blog-footer-image-2.jpeg"></div>
+                        <a href="#">The Top 10 Must-Reads</a>
+                    </li>
+                    <li>
+                        <div class="blog-img"><img src="./assets/blog-footer-image-1.jpg"></div>
+                        <a href="#">The Best Books for Kids</a>
+                    </li>
+                    <li>
+                        <div class="blog-img"><img src="./assets/blog-footer-image-2.jpeg"></div>
+                        <a href="#">The Best Books for Teens</a>
+                    </li>
+                </div>
+            </ul>
+            <ul class="footer-social">
+                <li><a href="#"><img src="./assets/Facebook.png"></a></li>
+                <li><a href="#"><img src="./assets/Linkedin.png"></a></li>
+                <li><a href="#"><img src="./assets/Linkedin.png"></a></li>
+                <li><a href="#"><img src="./assets/Facebook.png"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
